@@ -1,7 +1,11 @@
 package SortingProject;
 
 public class QuickSort {
-    public static <T extends Comparable<T>> void sort(T[] a, int start, int end){
+    public static <T extends Comparable<T>> void sort(T[] a){
+        sort(a, 0, a.length-1);
+    }
+    
+    private static <T extends Comparable<T>> void sort(T[] a, int start, int end){
         int i=start-1;
         int j=start;
 
