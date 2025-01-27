@@ -4,7 +4,7 @@ public class SelectionSort {
     public static <T extends Comparable<T>> void sort(T[] a){
         for(int i=0; i<a.length-1; i++){
             int smallest = i;
-            for(int j=i; j<a.length; j++){
+            for(int j=i+1; j<a.length; j++){
                 if(a[j].compareTo(a[smallest]) < 0){
                     smallest = j;
                 }
